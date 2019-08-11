@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UnitTesting" parallel="classes" thread-count="2">
+    <test name="Unit tests">
+
+        <!--Data-driven approach -->
+        <parameter name="number1" value="30"/>
+        <parameter name="number2" value="5"/>
+        <parameter name="difference" value="25"/>
+        <parameter name="multiplication" value="150"/>
+        <parameter name="division" value="6"/>
+
+        <!--Grouped test suites   -->
+        <groups>
+            <run>
+                <include name="smoke"></include>
+                <include name="expanded"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="AdditionalCalculationForDouble"></class>
+            <class name="AdditionalCalculationForDouble"></class>
+            <class name="AdditionCalculationForLongWithDataProvider"></class>
+            <class name="BooleanValueIsNegative"></class>
+            <class name="BooleanValueIsPositive"></class>
+            <class name="CosinesCalculation"></class>
+            <class name="CotangentCalculation"></class>
+            <class name="DivisionCalculationByZero"></class>
+            <class name="DivisionCalculationForDouble"></class>
+            <class name="DivisionCalculationForLong"></class>
+            <class name="MultiplicationCalculationForDouble"></class>
+            <class name="MultiplicationCalculatorForLong"></class>
+            <class name="PowCalculation"></class>
+            <class name="SinusCalculation"></class>
+            <class name="SquareCalculation"></class>
+            <class name="SubtractionCalculationForDouble"></class>
+            <class name="SubtractionCalculationForLong"></class>
+            <class name="TangentCalculation"></class>
+        </classes>
+    </test>
+</suite>
+
