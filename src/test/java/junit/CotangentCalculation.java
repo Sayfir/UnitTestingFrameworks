@@ -1,12 +1,15 @@
-import org.testng.Assert;
-import org.testng.annotations.Test;
+package junit;
+
+
+import org.junit.Assert;
+import org.junit.Test;
 
 public class CotangentCalculation extends BaseTest {
 
-    @Test(groups = {"expanded"})
+    @Test
     public void testGetCorrectCotangentOperationResult() {
         System.out.println("Thread id is: " + Thread.currentThread().getId() + " ");
-        Assert.assertEquals(calculator.ctg(67), 0.8240702951125692, "Invalid input");
+        Assert.assertEquals(0.8240702951125692, calculator.ctg(67));
     }
 }
 

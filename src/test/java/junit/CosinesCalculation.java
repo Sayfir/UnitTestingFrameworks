@@ -1,10 +1,13 @@
-import org.testng.Assert;
-import org.testng.annotations.Test;
+package junit;
+
+
+import org.junit.Assert;
+import org.junit.Test;
 
 public class CosinesCalculation extends BaseTest {
-    @Test(groups = {"expanded"})
+    @Test
     public void testGetCorrectCosinusOperationResult() {
         System.out.println("Thread id is: " + Thread.currentThread().getId() + " ");
-        Assert.assertEquals(calculator.cos(65), 0.8268286794901034, "Invalid input");
+        Assert.assertEquals(0.8268286794901034, calculator.cos(65));
     }
 }

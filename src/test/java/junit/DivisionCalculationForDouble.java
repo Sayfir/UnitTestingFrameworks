@@ -1,10 +1,13 @@
-import org.testng.Assert;
-import org.testng.annotations.Test;
+package junit;
+
+
+import org.junit.Assert;
+import org.junit.Test;
 
 public class DivisionCalculationForDouble extends BaseTest {
-    @Test(groups = {"expanded"})
+    @Test
     public void testGetCorrectDivisionOperationResultOnDoubleType() {
         System.out.println("Thread id is: " + Thread.currentThread().getId() + " ");
-        Assert.assertEquals(calculator.div(66.33, 22.11), 3.0, "Invalid result of division operation.");
+        Assert.assertEquals(3.0, calculator.div(66.33, 22.11));
     }
 }

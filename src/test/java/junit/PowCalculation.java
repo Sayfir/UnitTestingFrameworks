@@ -1,10 +1,13 @@
-import org.testng.Assert;
-import org.testng.annotations.Test;
+package junit;
+
+
+import org.junit.Assert;
+import org.junit.Test;
 
 public class PowCalculation extends BaseTest {
-    @Test(groups = {"Smoke", "p2"})
+    @Test
     public void testGetCorrectPowOperationResultOnDoubleType() {
         System.out.println("Thread id is: " + Thread.currentThread().getId() + " ");
-        Assert.assertEquals(calculator.pow(13.12, 2.66), 172.13439999999997);
+        Assert.assertEquals(172.13439999999997, calculator.pow(13.12, 2.66));
     }
 }

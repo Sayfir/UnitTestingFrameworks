@@ -17,24 +17,24 @@
             </run>
         </groups>
         <classes>
-            <class name="AdditionalCalculationForDouble"></class>
-            <class name="AdditionalCalculationForDouble"></class>
-            <class name="AdditionCalculationForLongWithDataProvider"></class>
-            <class name="BooleanValueIsNegative"></class>
-            <class name="BooleanValueIsPositive"></class>
-            <class name="CosinesCalculation"></class>
-            <class name="CotangentCalculation"></class>
-            <class name="DivisionCalculationByZero"></class>
-            <class name="DivisionCalculationForDouble"></class>
-            <class name="DivisionCalculationForLong"></class>
-            <class name="MultiplicationCalculationForDouble"></class>
-            <class name="MultiplicationCalculatorForLong"></class>
-            <class name="PowCalculation"></class>
-            <class name="SinusCalculation"></class>
-            <class name="SquareCalculation"></class>
-            <class name="SubtractionCalculationForDouble"></class>
-            <class name="SubtractionCalculationForLong"></class>
-            <class name="TangentCalculation"></class>
+            <class name="testng.AdditionalCalculationForDouble"></class>
+            <class name="testng.AdditionalCalculationForDouble"></class>
+            <class name="testng.AdditionCalculationForLongWithDataProvider"></class>
+            <class name="testng.BooleanValueIsNegative"></class>
+            <class name="testng.BooleanValueIsPositive"></class>
+            <class name="testng.CosinesCalculation"></class>
+            <class name="testng.CotangentCalculation"></class>
+            <class name="testng.DivisionCalculationByZero"></class>
+            <class name="testng.DivisionCalculationForDouble"></class>
+            <class name="testng.DivisionCalculationForLong"></class>
+            <class name="testng.MultiplicationCalculationForDouble"></class>
+            <class name="testng.MultiplicationCalculatorForLong"></class>
+            <class name="testng.PowCalculation"></class>
+            <class name="testng.SinusCalculation"></class>
+            <class name="testng.SquareCalculation"></class>
+            <class name="testng.SubtractionCalculationForDouble"></class>
+            <class name="testng.SubtractionCalculationForLong"></class>
+            <class name="testng.TangentCalculation"></class>
         </classes>
     </test>
 </suite>

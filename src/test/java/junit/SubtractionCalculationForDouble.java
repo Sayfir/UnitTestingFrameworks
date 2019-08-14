@@ -1,10 +1,12 @@
-import org.testng.Assert;
-import org.testng.annotations.Test;
+package junit;
+
+import org.junit.Assert;
+import org.junit.Test;
 
 public class SubtractionCalculationForDouble extends BaseTest {
-    @Test(groups = {"expanded"})
+    @Test
     public void testGetCorrectSubtractionOperationResultOnDoubleType() {
         System.out.println("Thread id is: " + Thread.currentThread().getId() + " ");
-        Assert.assertEquals(calculator.sub(345.56, 578.99), -233.43 , "Invalid result of subtraction operation.");
+        Assert.assertEquals(-233.43, calculator.sub(345.56, 578.99));
     }
 }
