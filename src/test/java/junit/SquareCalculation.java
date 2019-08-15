@@ -1,12 +1,13 @@
 package junit;
 
+import com.epam.tat.module4.Calculator;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class SquareCalculation extends BaseTest {
     @Test
     public void testGetCorrectPowOperationResultOnDoubleType() {
-        System.out.println("Thread id is: " + Thread.currentThread().getId()  + " ");
-        Assert.assertEquals(8.028075734570521, calculator.sqrt(-64.45));
+        Calculator calculator = new Calculator();
+        Assert.assertEquals(8.028075734570521, calculator.sqrt(-64.45), 15);
     }
 }

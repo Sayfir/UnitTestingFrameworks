@@ -1,11 +1,12 @@
 package junit;
 
 
+import com.epam.tat.module4.Calculator;
 import org.junit.Test;
 
 public class DivisionCalculationByZero extends BaseTest {
-    @Test
+    @Test(expected = NumberFormatException.class)
     public void testGetDevidedByNullException() {
-        System.out.println("Thread id is: " + Thread.currentThread().getId() + " ");
+        Calculator calculator = new Calculator();
         calculator.div(33, 0);}
 }

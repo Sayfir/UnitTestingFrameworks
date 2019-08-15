@@ -5,18 +5,17 @@ import com.epam.tat.module4.Calculator;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
+
 public class BaseTest {
-    protected Calculator calculator;
+     public Calculator calculator;
 
     @BeforeClass
-    public static void setUp() {
-        System.out.println("Thread id is: " + Thread.currentThread().getId() + " ");
-       Calculator calculator = new Calculator();
+    public static void setUp1() {
+        Calculator calculator = new Calculator();
     }
 
     @AfterClass
-    public static void tearDown() {
-        System.out.println("Thread id is: " + Thread.currentThread().getId() + " ");
-       Calculator calculator = null;
+    public static void tearDown1() {
+        Calculator calculator = new Calculator();
     }
 }
