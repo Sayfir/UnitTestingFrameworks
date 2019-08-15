@@ -1,0 +1,40 @@
+1. Boolean isPositive method should be overwritten from:
+ public boolean isPositive(long val) {
+        if (val == 0L) {
+            return false;
+        } else {
+            return val > 0L;
+        }
+    } 
+
+to
+
+public boolean isPositive(long val) {
+        return (val > 0L) {
+}
+
+
+2. In function multiplication needless rounding 
+public double mult(double a, double b) {
+        return Math.floor(a * b);
+    }
+return should be without rounding	
+
+
+3. In function pow needless rounding
+public double pow(double a, double b) {
+        return Math.pow(a, Math.floor(b));
+    }
+
+	b - should be without rounding or should be not floor
+		
+	
+4. In function sqrt Math.abs is needless it is hides assertion for negative values
+
+5. In ctg function as return Math.tanh is used
+
+6. In cos ficntion as return return Math.sin is used
+
+7. In tg function Math.tanh should be used, or in return Math.sin(a)/Math.cos(a) as we do not have class parameters which should be used in this function 
+
+8. For all sin,cos,tg,ctg there are no covertation to radians, Math.toRadians should be used on parameter before functions

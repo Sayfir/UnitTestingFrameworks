@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UnitTesting" parallel="classes" thread-count="2">
+    <test name="Unit tests">
+
+        <!--Data-driven approach -->
+        <parameter name="number1" value="30"/>
+        <parameter name="number2" value="5"/>
+        <parameter name="difference" value="25"/>
+        <parameter name="multiplication" value="150"/>
+        <parameter name="division" value="6"/>
+
+        <!--Grouped test suites   -->
+        <groups>
+            <run>
+                <include name="smoke"></include>
+                <include name="expanded"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="testng.AdditionalCalculationForDouble"></class>
+            <class name="testng.AdditionalCalculationForDouble"></class>
+            <class name="testng.AdditionCalculationForLongWithDataProvider"></class>
+            <class name="testng.BooleanValueIsNegative"></class>
+            <class name="testng.BooleanValueIsPositive"></class>
+            <class name="testng.CosinesCalculation"></class>
+            <class name="testng.CotangentCalculation"></class>
+            <class name="testng.DivisionCalculationByZero"></class>
+            <class name="testng.DivisionCalculationForDouble"></class>
+            <class name="testng.DivisionCalculationForLong"></class>
+            <class name="testng.MultiplicationCalculationForDouble"></class>
+            <class name="testng.MultiplicationCalculatorForLong"></class>
+            <class name="testng.PowCalculation"></class>
+            <class name="testng.SinusCalculation"></class>
+            <class name="testng.SquareCalculation"></class>
+            <class name="testng.SubtractionCalculationForDouble"></class>
+            <class name="testng.SubtractionCalculationForLong"></class>
+            <class name="testng.TangentCalculation"></class>
+        </classes>
+    </test>
+</suite>
+
